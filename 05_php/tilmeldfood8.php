@@ -1,6 +1,6 @@
 <?php
-$fra="Fred356e@stud.kea.dk";
-$til="admin@frederikerichsen.dk";
+$fra="info@mikkelhein.dk";
+$til="frederikerichsen@hotmail.com";
 
 $navn=$_REQUEST['navn'];
 $email=$_REQUEST['email'];
