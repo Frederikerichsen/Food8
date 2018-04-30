@@ -12,9 +12,9 @@ btnBook.onclick = function () {
 spanBook.onclick = function () {
     modalBook.style.display = "none";
 }
-When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modalBook) {
-        modal.style.display = "none";
-    }
-}
+//When the user clicks anywhere outside of the modal, close it
+//window.onclick = function (event) {
+//    if (event.target == modalBook) {
+//        modalBook.style.display = "none";
+//    }
+//}

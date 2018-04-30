@@ -13,8 +13,6 @@ function toggleMenu() {
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-
-
 }
 // BURGER MENU SLUT
 
