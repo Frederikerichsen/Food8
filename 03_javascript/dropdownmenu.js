@@ -2,9 +2,9 @@
 
 
 document.querySelector(".dropbtn").addEventListener("click", toggleMenu);
-document.querySelector(".bar1").classList.toggle("click", ("change"));
-document.querySelector(".bar2").classList.toggle("click", ("change"));
-document.querySelector(".bar3").classList.toggle("click", ("change"));
+document.querySelector(".bar1").addEventListener("click", ("change"));
+document.querySelector(".bar2").addEventListener("click", ("change"));
+document.querySelector(".bar3").addEventListener("click", ("change"));
 
 function toggleMenu() {
     document.querySelector(".dropbtn").classList.toggle("change");
