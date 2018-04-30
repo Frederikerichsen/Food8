@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food8.dk</title>
+    <link rel="stylesheet" href="/02_css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
+
+<body>
+    <!--FOOD8 LOGO START-->
+    <img id="logo" src="/food8_imgs/logo.png" alt="logo" center>
+    <!--FOOD8 LOGO SLUT-->
+
+
+    <!--NYHEDSBREV OG SoMe START-->
+    <div id="menu">
+        <a href="/05_php/tilmeldbesked.html"><button class="tilmeldforside">  Tilmeld Nyhedsbrev</button></a>
+
+        <div id="so_metop">
+            <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"> </a>
+            <a href="https://www.instagram.com/food8dk/"><img src="/food8_imgs/instagram_icon.png"></a>
+        </div>
+        <!--NYHEDSBREV OG SoMe SLUT-->
+
+
+        <!--DROPDOWN MENU START-->
+        <div class="navbar">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/food8.html">MAD - STEDER</a> <a href="/01_html/om.html">OM FOOD8</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--DROPDOWN MENU SLUT-->
+
+
+    <!--BOOK BORD KNAP START-->
+    <button id="bookBtn" class="bookBord">Book Bord</button>
+    <div id="bookModal" class="modalBook">
+        <div class="modal-contentBook"> <span class="closeBook">&times;</span>
+            <iframe class="bookingsystem" width="350" height="623" src="https://xd.adobe.com/embed/7196496b-7f93-4d91-584a-85546512ee43-07a7/" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--BOOK BORD KNAP SLUT-->
+
+
+    <section id=food8>
+        <!--OM FOOD8 START-->
+        <div id="omfood8">
+            <h1>Om Food8</h1>
+            <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</p>
+        </div>
+        <!--OM FOOD8 SLUT-->
+
+
+        <!--INDHOLD START-->
+        <div id="food8billeder">
+            <h2> Nyheder</h2>
+            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img src="/food8_imgs/forsidebilleder/argnohoforside.jpg"></a>
+            <p>NOHO har fået nye sommer cocktails på menuen, så kig forbi og sid i smukke omgivelser, imens bartenderne shaker cocktails til dig og dine venner. Du kan nyde solen og få den bedste aften på NOHO.</p>
+            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img src="/food8_imgs/forsidebilleder/rogvinangforside.jpg"></a>
+            <p>Rødder og vin slår dørene op for en aftne med biodynamiske vine, som giver dig den bedste guide på hvilket biodynamiske vine som du kan få fingerne i henover sommeren.</p>
+            <a href="https://food8.dk/the-fat-pike/"><img src="/food8_imgs/forsidebilleder/tfpargforside.jpg"></a>
+            <p>Er du glad for østers? så tilbyder The Fat pike en aftne med danske østers på menuen, i gennem aftenen vil du kunne smage på op til 5 forskellige slags danske østers, som er kommet direkte ind af døren</p>
+        </div>
+    </section>
+    <!--INDHOLD SLUT-->
+
+
+    <!--GEOLOCATION - MAP START-->
+    <div id="map"></div>
+    <!--GEOLOCATION - MAP SLUT-->
+
+
+    <!--FOOTER START-->
+    <footer id="footergrid">
+        <div id="footercontent">
+            <div id="kontaktoplysninger">
+                <p> info@food8.dk</p>
+                <p>Food8 ApS — Langelinie 10, 2100 København</p>
+                <p>CVR nr. 39306999</p>
+            </div>
+            <div id="strom">
+                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.png"></a>
+            </div>
+            <div id="so_mefooter">
+                <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"></a>
+                <a href="https://www.instagram.com/food8dk/"><img src="/food8_imgs/instagram_icon.png"></a>
+            </div>
+            <button class="tilmeld">LOGIN</button>
+        </div>
+    </footer>
+    <!--FOOTER SLUT-->
+
+    <script src="/03_javascript/dropdownmenu.js"></script>
+    <script src="/03_javascript/bookBord.js"></script>
+    <script src="/03_javascript/location.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
+</body>
+
+</html>
