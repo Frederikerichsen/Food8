@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrangementer</title>
+
+    <title>HVAD ER DETTE FOR EN SIDE?</title>
     <link rel="stylesheet" href="/02_css/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
 
 <body>
 
@@ -44,6 +44,20 @@
     </div>
     <!--DROPDOWN MENU SLUT-->
 
+    <!--INDHOLD START-->
+    <section id="modtager">
+        <template id="myTemplate">
+            <article id="info"> <a data-single href=""><h2 data-navn></h2></a>
+                <!--<img src="" data-billede>-->
+                <p data-tekst></p>
+                <a data-readmore href="">
+                    <p>Læs mere</p>
+                </a>
+            </article>
+        </template>
+    </section>
+    <!--INDHOLD SLUT-->
+
     <!--BOOK BORD KNAP START-->
     <button id="bookBtn" class="bookBord">Book Bord</button>
     <div id="bookModal" class="modalBook">
@@ -52,56 +66,14 @@
         </div>
     </div>
     <!--BOOK BORD KNAP SLUT-->
-    <!--OM SAERARRANGEMENTINDHOLD START-->
-    <section id="saerarrangementindhold">
-        <h1>Arrangementer</h1>
-        <div id="saerarrangementtekst">
-
-            <p>Hos food8 tilbyder vi forskellige særarrangementer med vores restauranter og steder, som vi huser under samme tag, hos food8.I løbet af sommeren vil de forskellige steder byde på op til flere arrangementer, som vil guide dig gennem en fantastisk smagsoplevelse og sørge for at du og dine venner får de bedste oplevelser. <br> <br> Ved at kigge nedenfor, kan du danne dig et overblik kommende og nuværende arrangementer, hvor de finder sted og hvilke kulinariske oplevelser du kan få. <br>
-
-            </p>
-        </div>
 
 
-        <div id="saerarrangementnyheder">
 
-            <img id="saerarrangementbillede" src="/food8_imgs/arrangementer/rodderogvinarrang.jpg">
-
-
-            <img id="saerarrangementbillede" src="/food8_imgs/arrangementer/nohoarrang.jpg">
-
-
-            <img id="saerarrangementbillede" src="/food8_imgs/arrangementer/thefatpikearrang.jpg">
-
-
-        </div>
-    </section>
-
-    <!--OM SAERARRANGEMENTINDHOLD SLUT-->
-
-
-    <!--FOOTER START-->
-    <footer id="footergrid">
-        <div id="footercontent">
-            <div id="kontaktoplysninger">
-                <p> info@food8.dk</p>
-                <p>Food8 ApS — Langelinie 10, 2100 København</p>
-                <p>CVR nr. 39306999</p>
-            </div>
-            <div id="strom">
-                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.png"></a>
-            </div>
-            <div id="so_mefooter">
-                <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"></a>
-                <a href="https://www.instagram.com/food8dk/"><img src="/food8_imgs/instagram_icon.png"></a>
-            </div>
-            <button class="tilmeld">LOGIN</button>
-        </div>
-    </footer>
-    <!--FOOTER SLUT-->
     <script src="/03_javascript/dropdownmenu.js"></script>
     <script src="/03_javascript/bookBord.js"></script>
     <script src="/03_javascript/location.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
+    <script src="/03_javascript/food8_javascript.js"></script>
 </body>
 
 </html>
