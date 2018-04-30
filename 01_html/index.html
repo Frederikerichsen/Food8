@@ -13,7 +13,7 @@
 
 <body>
     <!--NYHEDSBREV OG SoMe START-->
-<!--
+    <!--
     <div class="search">
     <input type="text" placeholder="Search.." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
@@ -48,25 +48,25 @@
     <!--BOOK BORD KNAP SLUT-->
     <!--OM FOOD8 START-->
     <div id="omfood8">
-        <h1>Om Food8</h1>
-        <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</p>
+        <h1 data-overskrift></h1>
+        <p data-tekst></p>
     </div>
     <div id="omNyhedsbrev">
         <a href="/05_php/tilmeldbesked.html">
             <button class="tilmeldforside"> Tilmeld Nyhedsbrev</button>
         </a>
-        <p>Clara...I want you know that I care about you deeply, but I realize that I don't belong here, and I have to go back to where I came from. And where might that be? ...I can't tell you. Well, wherever you're going, take me with you! I can't, Clara. I wish it didn't have to be this way...but just believe me when I say that I'll never forget you and that...I love you.</p>
+        <p data-tekst2></p>
     </div>
     <!--OM FOOD8 SLUT-->
     <!--INDHOLD START-->
     <section id=food8>
         <div id="food8billeder">
-            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img src="/food8_imgs/forsidebilleder/argnohoforside.jpg"></a>
-            <p>NOHO har fået nye sommer cocktails på menuen, så kig forbi og sid i smukke omgivelser, imens bartenderne shaker cocktails til dig og dine venner. Du kan nyde solen og få den bedste aften på NOHO.</p>
-            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img src="/food8_imgs/forsidebilleder/rogvinangforside.jpg"></a>
-            <p>Rødder og vin slår dørene op for en aftne med biodynamiske vine, som giver dig den bedste guide på hvilket biodynamiske vine som du kan få fingerne i henover sommeren.</p>
-            <a href="https://food8.dk/the-fat-pike/"><img src="/food8_imgs/forsidebilleder/tfpargforside.jpg"></a>
-            <p>Er du glad for østers? så tilbyder The Fat pike en aftne med danske østers på menuen, i gennem aftenen vil du kunne smage på op til 5 forskellige slags danske østers, som er kommet direkte ind af døren</p>
+            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img data-billede src="" alt=""></a>
+            <p data-tekst3></p>
+            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img data-billede2 src="" alt=""></a>
+            <p data-tekst4></p>
+            <a href="#"><img data-billede3 src="" alt=""></a>
+            <p data-tekst5></p>
         </div>
     </section>
     <!--INDHOLD SLUT-->
@@ -96,6 +96,31 @@
     <script src="/03_javascript/bookBord.js"></script>
     <script src="/03_javascript/location.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", Jason);
+
+        async function Jason() {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            let id = urlParams.get("restaurant");
+
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/forsidecontent/255/");
+
+            let forside = await jsonObjekt.json();
+
+            document.querySelector("[data-tekst]").textContent = forside.acf.forside_tekst4;
+            document.querySelector("[data-tekst2]").textContent = forside.acf.forside_tekst5;
+            document.querySelector("[data-billede]").src = forside.acf.forside_billede3;
+            document.querySelector("[data-tekst3]").textContent = forside.acf.tekst_forside;
+            document.querySelector("[data-billede2]").src = forside.acf.forside_billede2;
+            document.querySelector("[data-tekst4]").textContent = forside.acf.tekst_foside2;
+            document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
+            document.querySelector("[data-tekst5]").textContent = forside.acf.forside_tekst3;
+            document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
+
+
+        }
+    </script>
 </body>
 
 </html>
