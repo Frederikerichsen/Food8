@@ -8,10 +8,49 @@
 </head>
 
 <body>
+
+    <section id="modtager">
+        <template id="myTemplate">
+          <article>
+             <div id="formular"></div>
+           </article>
+           </template>
+    </section>
+
+
+
+    <!--
     <form action="tilmeldfood8.php">
         Navn: <input type="text" name="navn" placeholder="Dit navn" required><br> Email: <input type="email" name="email" placeholder="Din Email" required><br> Besked: <textarea name="besked" placeholder="Din Besked" required></textarea><br>
         <input type="submit">
     </form>
-</body>
+-->
 
+    <script>
+        let form;
+        let minTemplate = document.querySelector("#myTemplate");
+        document.addEventListener("DOMContentLoaded", hentJson);
+        console.log(hentJson);
+        console.log(visJason);
+
+        async function hentJson() {
+            //hent json
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/244/");
+            //vis objekt som json
+            form = await jsonObjekt.json();
+            visJason();
+        }
+
+        function visJason() {
+
+            form.forEach(element => {
+                let klon = minTemplate.cloneNode(true).content;
+
+                klon.querySelector("#formular").href = element.content.rendered;
+                klon.querySelector("#modtager").appendChild(klon);
+            })
+        }
+    </script>
+
+</body>
 </html>
