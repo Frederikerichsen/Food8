@@ -23,7 +23,6 @@ body {
 
 /*==========GENERAL SETUP==========*/
 
-
 /*==========TYPOGRAFI START==========*/
 
 a {
@@ -48,7 +47,6 @@ p {
 
 
 /*==========TYPOGRAFI SLUT==========*/
-
 
 /*==========TOP MENU START==========*/
 
@@ -140,7 +138,6 @@ p {
 
 /*==========TOP MENU SLUT==========*/
 
-
 /*==========BURGER MENU START==========*/
 
 .bar1,
@@ -213,7 +210,6 @@ p {
 
 
 /*==========BURGER MENU SLUT==========*/
-
 
 /*==========FORSIDE CONTENT START==========*/
 
@@ -293,9 +289,7 @@ p {
 
 /*==========FORSIDE CONTENT SLUT==========*/
 
-
 /*==========GEOLOCATION START==========*/
-
 
 /***********OM FOOD8 STARTR**************/
 
@@ -314,7 +308,6 @@ p {
 
 
 /*==========GEOLOCATION SLUT==========*/
-
 
 /*==========FOOTER START==========*/
 
@@ -376,7 +369,6 @@ p {
 
 /*==========FOOTER SLUT==========*/
 
-
 /*==========SÆRARRANGEMENTER START==========*/
 
 #saerarrangementindhold {
@@ -421,7 +413,6 @@ p {
 
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
-
 /*==========SØGEFUNKTION START==========*/
 
 /*
@@ -439,9 +430,7 @@ button[type=submit] {
 }
 */
 
-
 /*==========SØGEFUNKTION SLUT==========*/
-
 
 /*==========STEDER - RESTAURANTER START==========*/
 
@@ -451,7 +440,6 @@ button[type=submit] {
 
 
 /*==========STEDER - RESTAURANTER SLUT==========*/
-
 
 /*==========BOOKING SYSTEM START==========*/
 
@@ -534,3 +522,56 @@ button[type=submit] {
 
 
 /*==========BOOKING SYSTEM SLUT==========*/
+
+/*==========SINGLE START==========*/
+
+#singleinfo {
+    max-width: 100%;
+}
+
+#tekstdata {
+    justify-content: center;
+}
+
+#billedegrid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    z-index: 80;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+
+#billedegrid img {
+    max-width: 100%;
+}
+
+#billedelogo img {
+    max-width: 100%;
+}
+
+#footer1 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    z-index: 80;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+
+#footer2 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    z-index: 80;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+
+/*==========SINGLE SLUT==========*/

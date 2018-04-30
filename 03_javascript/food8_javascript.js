@@ -25,7 +25,7 @@ function visPosts() {
     posts.forEach(element => {
 
         let klon = minTemplate.cloneNode(true).content;
-        let nummer = Number(-60);
+        let nummer = Number(15);
 
         klon.querySelector("[data-navn]").innerHTML = element.title.rendered;
         //klon.querySelector("[data-type]").textContent = element.acf.fugletype;

@@ -13,51 +13,45 @@
 
 <body>
 
-    <!--FOOD8 LOGO START-->
-    <img id="logo" src="/food8_imgs/logo.png" alt="logo" center>
-    <!--FOOD8 LOGO SLUT-->
-
-
-    <!--NYHEDSBREV OG SoMe START-->
-    <div id="menu">
-        <a href="/05_php/tilmeldbesked.html"><button class="tilmeldforside">  Tilmeld Nyhedsbrev</button></a>
-
-        <div id="so_metop">
-            <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"> </a>
-            <a href="https://www.instagram.com/food8dk/"><img src="/food8_imgs/instagram_icon.png"></a>
-        </div>
-        <!--NYHEDSBREV OG SoMe SLUT-->
-
-
-        <!--DROPDOWN MENU START-->
-        <div class="navbar">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </button>
-                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/omfood8.html">OM FOOD8</a> <a href="/01_html/mad-steder.html">MAD - STEDER</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--DROPDOWN MENU SLUT-->
-
-    <!--BOOK BORD KNAP START-->
-    <button id="bookBtn" class="bookBord">Book Bord</button>
-    <div id="bookModal" class="modalBook">
-        <div class="modal-contentBook"> <span class="closeBook">&times;</span>
-            <iframe class="bookingsystem" width="350" height="623" src="https://xd.adobe.com/embed/7196496b-7f93-4d91-584a-85546512ee43-07a7/" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <!--BOOK BORD KNAP SLUT-->
-
     <section id="modtager">
 
         <article>
-            <h2 data-navn></h2>
-            <p data-tekst></p>
+            <div id="singleinfo">
+                <div id="billedelogo">
+                    <img src="" data-billedelogo>
+                </div>
+
+                <div id="billedegrid">
+                    <img src="" data-billedebrunch>
+                    <img src="" data-billedelunch>
+                    <img src="" data-billedeevening>
+                    <img src="" data-billededrinks>
+                </div>
+
+
+                <h2 data-navn></h2>
+                <div id="tekstdata">
+                    <p data-tekst></p>
+                </div>
+
+                <div id="restaurantfooter">
+                    <div id="footer1">
+                        <p data-aabningstider></p>
+                        <p data-kontakt></p>
+                    </div>
+                    <div id="footer2">
+                        <p data-adresse></p>
+                        <!--<a href="http://www.findsmiley.dk/548715">
+                            <p data-kontrolrapport></p>
+                        </a>-->
+                        <div id="kontrolrapport">
+                            <p data-kontrolrapport></p>
+                            <a data-kontrolrapportlink href="http://www.findsmiley.dk/548715"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </article>
     </section>
 
@@ -71,15 +65,29 @@
             var urlParams = new URLSearchParams(window.location.search);
             let id = urlParams.get("restaurant");
 
-            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/" + id);
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/nohohome/" + id);
 
             let single = await jsonObjekt.json();
+
+            document.querySelector("[data-aabningstider]").innerHTML = single.acf.Aabningstider;
+            document.querySelector("[data-kontakt]").innerHTML = single.acf.Kontakt;
+            document.querySelector("[data-adresse]").innerHTML = single.acf.Adresse;
+            document.querySelector("[data-kontrolrapport]").innerHTML = single.acf.Kontrolrapport;
+            document.querySelector("[data-kontrolrapportlink]").innerHTML = single.acf.kontrolrapportlink;
 
             document.querySelector("[data-navn]").innerHTML = single.title.rendered;
             document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
 
+            document.querySelector("[data-billedelogo]").src = single.acf.billedelogo;
+
+            document.querySelector("[data-billedebrunch]").src = single.acf.billedebrunch;
+            document.querySelector("[data-billedelunch]").src = single.acf.billedelunch;
+            document.querySelector("[data-billedeevening]").src = single.acf.billedeevening;
+            document.querySelector("[data-billededrinks]").src = single.acf.billededrinks;
         }
+
     </script>
+
 </body>
 
 </html>
