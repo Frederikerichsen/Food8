@@ -50,14 +50,18 @@
     </div>
     <!--BOOK BORD KNAP SLUT-->
 
+    <!--INDHOLD SLUT-->
+    <section id="modtager">
+        <div id="tekstdata">
+            <h2 data-navn></h2>
+            <p data-tekst></p>
+        </div>
+    </section>
+
+    <!--INDHOLD START-->
+
     <!--FOOTER START-->
     <footer id="footergrid">
-        <div id="omfood8tekst">
-
-            <h1>Hvad er Food8</h1><br>
-
-            <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder. Der vil altid være nye oplevelser og inspiration at hente på food8.dk. Vi samler nyheder, guides og bordbooking samme sted. Så har du allerede oplevet en af restauranter på food8, eller er der fuldt booket, så inspirerer vi dig til en anden god oplevelse. I det ugentlige nyhedsbrev kan du få historier, guides og nyheder om food8s steder. Fælles for alle de steder, du finder på food8.dk er, at de er drevet af forskellige restauratører, som er gået sammen i en restaurationsgruppe for samlet at kunne tilbyde flere oplevelser.</p> <br>
-        </div>
         <div id="footercontent">
 
             <div id="kontaktoplysninger">
@@ -81,9 +85,26 @@
     <!--FOOTER SLUT-->
 
     <script src="/03_javascript/dropdownmenu.js"></script>
-    <script src="/03_javascript/bookBord.js"></script>
+    <!--    <script src="/03_javascript/bookBord.js"></script>
     <script src="/03_javascript/location.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+
+            var urlParams = new URLSearchParams(window.location.search);
+
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/omfood8/257");
+
+            let single = await jsonObjekt.json();
+
+            document.querySelector("[data-navn]").innerHTML = single.title.rendered;
+            document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
+
+        }
+    </script>
 </body>
 
 </html>
