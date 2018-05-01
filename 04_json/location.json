@@ -37,7 +37,8 @@
             "lng": 12.579911
         },
         "title": "The Fat Pike",
-        "icon": "food8_imgs/location_icons/The-Fat-Pike.png"
+        "icon": "food8_imgs/location_icons/The-Fat-Pike.png",
+        "content": "<img id='logo' src='food8_imgs/location_icons/The-Fat-Pike.png' alt='logo' center><strong>The Fat Pike;</strong><br>Njalsgade 19D,<br>2300 København H, Danmark<br> <a href = 'http://mikkelhein.dk/kea/food8/wordpress/2018/04/17/noho-2/'>Besøg siden her</a>"
  },
     {
         "position": {
@@ -46,7 +47,7 @@
         },
         "title": "Rødder &amp; Vin",
         "icon": "food8_imgs/location_icons/rodderogvin.png",
-        "content": "hej med dig"
+        "content": "<img id='logo' src='food8_imgs/location_icons/rodderogvin.png' alt='logo' center><strong>Rødder &amp; Vin</strong><br>Ravnsborggade 8,<br>2200 København N, Danmark<br> <a href = 'http://mikkelhein.dk/kea/food8/wordpress/2018/04/17/noho-2/'>Besøg siden her</a>"
 },
 
     {
