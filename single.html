@@ -75,11 +75,14 @@
                     <img src="" data-billededrinks>
                 </div>
 
-
                 <h2 data-navn></h2>
-                <div id="tekstdata">
-                    <p data-tekst></p>
-                </div>
+
+                <details closed>
+                    <summary>Læs mere</summary>
+                    <div id="tekstdata">
+                        <p class="singleinfo" data-tekst></p>
+                    </div>
+                </details>
 
                 <div id="restaurantfooter">
                     <div id="footer1">
@@ -101,6 +104,24 @@
 
         </article>
     </section>
+
+    <footer id="footergrid">
+        <div id="footercontent">
+            <div id="kontaktoplysninger">
+                <p> info@food8.dk</p>
+                <p>Food8 ApS — Langelinie 10, 2100 København</p>
+                <p>CVR nr. 39306999</p>
+            </div>
+            <div id="strom">
+                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.jpg"></a>
+            </div>
+            <div id="so_mefooter">
+                <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"></a>
+                <a href="https://www.instagram.com/food8dk/"><img src="/food8_imgs/instagram_icon.png"></a>
+            </div>
+            <button class="tilmeld">LOGIN</button>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", hentJson);
@@ -130,6 +151,7 @@
             document.querySelector("[data-billedeevening]").src = single.acf.billedeevening;
             document.querySelector("[data-billededrinks]").src = single.acf.billededrinks;
         }
+
     </script>
 
     <script>
@@ -163,6 +185,7 @@
         }
 
         //// Vis template i DOMs
+
     </script>
 
     <script>
@@ -191,6 +214,7 @@
                 modal.style.display = "none";
             }
         }*/
+
     </script>
 
     <script src="/03_javascript/dropdownmenu.js"></script>
