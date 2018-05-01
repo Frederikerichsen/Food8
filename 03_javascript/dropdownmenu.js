@@ -6,8 +6,11 @@ document.querySelector(".bar1").addEventListener("click", ("change"));
 document.querySelector(".bar2").addEventListener("click", ("change"));
 document.querySelector(".bar3").addEventListener("click", ("change"));
 
+
+
 function toggleMenu() {
     document.querySelector(".dropbtn").classList.toggle("change");
+
 }
 
 

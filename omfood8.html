@@ -83,8 +83,6 @@
     <!--FOOTER SLUT-->
     <script src="03_javascript/dropdownmenu.js"></script>
     <script src="03_javascript/bookBord.js"></script>
-    <script src="03_javascript/location.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
     <script>
         document.addEventListener("DOMContentLoaded", hentJson);
         async function hentJson() {
@@ -94,6 +92,7 @@
             document.querySelector("[data-navn]").innerHTML = single.title.rendered;
             document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
         }
+
     </script>
 </body>
 
