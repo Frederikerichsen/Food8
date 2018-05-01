@@ -19,9 +19,10 @@
     <button type="submit"><i class="fa fa-search"></i></button>
 </div>
 -->
+    <div id="search"> <img src="/food8_imgs/serach.jpg" alt="søge knap"> </div>
     <div id="menu">
-        <!--FOOD8 LOGO <START--><a href="index.html"><img id="logo" src="/food8_imgs/logo.png" alt="logo" center>
-        </a>
+        <!--FOOD8 LOGO <START-->
+        <a href="index.html"><img id="logo" src="/food8_imgs/logo.png" alt="logo" center> </a>
         <!--FOOD8 LOGO SLUT-->
         <!--NYHEDSBREV OG SoMe SLUT-->
         <!--DROPDOWN MENU START-->
@@ -32,15 +33,11 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </button>
-                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a>
-                    <a href="/01_html/mad-steder.html">MAD - STEDER</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/omfood8.html">OM FOOD8</a>
-                </div>
-
+                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a> <a href="/01_html/mad-steder.html">MAD - STEDER</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/omfood8.html">OM FOOD8</a> </div>
             </div>
         </div>
     </div>
     <!--DROPDOWN MENU SLUT-->
-
     <!--BOOK BORD KNAP START-->
     <button id="bookBtn" class="bookBord">Book Bord</button>
     <div id="bookModal" class="modalBook">
@@ -49,31 +46,31 @@
         </div>
     </div>
     <!--BOOK BORD KNAP SLUT-->
-
     <!--INDHOLD SLUT-->
     <section id="modtager">
         <div id="tekstdata">
             <h2 data-navn></h2>
             <p data-tekst></p>
+            <br>
+            <a href="/05_php/tilmeldbesked.html">
+                <button class="blivfood8"> Bliv en del af Food8</button>
+            </a>
+            <a href="/05_php/tilmeldbesked.html">
+                <button class="tilmeldom"> Tilmeld Nyhedsbrev</button>
+            </a>
         </div>
     </section>
-
     <!--INDHOLD START-->
-
     <!--FOOTER START-->
     <footer id="footergrid">
         <div id="footercontent">
-
             <div id="kontaktoplysninger">
                 <p> info@food8.dk</p>
                 <p>Food8 ApS — Langelinie 10, 2100 København</p>
                 <p>CVR nr. 39306999</p>
-
             </div>
-
-
             <div id="strom">
-                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.png"></a>
+                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.jpg"></a>
             </div>
             <div id="so_mefooter">
                 <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"></a>
@@ -83,26 +80,18 @@
         </div>
     </footer>
     <!--FOOTER SLUT-->
-
     <script src="/03_javascript/dropdownmenu.js"></script>
-<script src="/03_javascript/bookBord.js"></script>
+    <script src="/03_javascript/bookBord.js"></script>
     <script src="/03_javascript/location.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", hentJson);
-
         async function hentJson() {
-
             var urlParams = new URLSearchParams(window.location.search);
-
             let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/omfood8/257");
-
             let single = await jsonObjekt.json();
-
             document.querySelector("[data-navn]").innerHTML = single.title.rendered;
             document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
-
         }
     </script>
 </body>
