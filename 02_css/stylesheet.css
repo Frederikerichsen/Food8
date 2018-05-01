@@ -52,6 +52,13 @@ p {
 
 /*==========TOP MENU START==========*/
 
+#search img {
+    height: auto;
+    width: 130px;
+    margin-left: 225px;
+    padding-top: 20px;
+}
+
 #logo {
     display: block;
     margin-right: auto;
@@ -105,7 +112,45 @@ p {
     border-radius: 1%;
     cursor: pointer;
     position: absolute;
-    bottom: 250px;
+    bottom: 190px;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
+}
+
+.tilmeldom {
+    background-color: #9bd5c4;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -234px;
+    left: 30%;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
+}
+
+.blivfood8 {
+    background-color: #9bd5c4;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 214px;
+    left: 30%;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
 }
@@ -167,7 +212,7 @@ p {
     background-color: white;
     ;
     color: white;
-    padding: 16px;
+    padding: 7px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -470,7 +515,7 @@ button[type=submit] {
     position: fixed;
     transform: rotate(90deg);
     right: -42px;
-    top: 150px;
+    top: 200px;
     background-color: #9bd5c4;
     border: none;
     color: white;
@@ -552,7 +597,7 @@ button[type=submit] {
 }
 
 #tekstdata {
-    text-align: center;
+    text-align: left;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #f4efe3;
@@ -561,6 +606,7 @@ button[type=submit] {
     padding-top: 2px;
     padding-left: 20px;
     padding-right: 20px;
+    text-decoration: none;
 }
 
 #billedegrid {
