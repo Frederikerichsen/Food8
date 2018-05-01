@@ -35,7 +35,6 @@ async function getJson() {
 
         });
         console.log(pos.content);
-
     });
 }
 
