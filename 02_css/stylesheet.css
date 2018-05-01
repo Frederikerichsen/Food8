@@ -25,7 +25,6 @@ body {
 
 /*==========GENERAL SETUP==========*/
 
-
 /*==========TYPOGRAFI START==========*/
 
 a {
@@ -50,7 +49,6 @@ p {
 
 
 /*==========TYPOGRAFI SLUT==========*/
-
 
 /*==========TOP MENU START==========*/
 
@@ -141,7 +139,6 @@ p {
 
 /*==========TOP MENU SLUT==========*/
 
-
 /*==========BURGER MENU START==========*/
 
 .bar1,
@@ -215,7 +212,6 @@ p {
 
 
 /*==========BURGER MENU SLUT==========*/
-
 
 /*==========FORSIDE CONTENT START==========*/
 
@@ -316,9 +312,7 @@ p {
 
 /*==========FORSIDE CONTENT SLUT==========*/
 
-
 /*==========GEOLOCATION START==========*/
-
 
 /***********OM FOOD8 STARTR**************/
 
@@ -338,7 +332,6 @@ p {
 
 
 /*==========GEOLOCATION SLUT==========*/
-
 
 /*==========FOOTER START==========*/
 
@@ -399,7 +392,6 @@ p {
 
 /*==========FOOTER SLUT==========*/
 
-
 /*==========SÆRARRANGEMENTER START==========*/
 
 #saerarrangementindhold {
@@ -444,9 +436,7 @@ p {
 
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
-
 /*==========SØGEFUNKTION START==========*/
-
 
 /*
 .search {
@@ -463,9 +453,7 @@ button[type=submit] {
 }
 */
 
-
 /*==========SØGEFUNKTION SLUT==========*/
-
 
 /*==========STEDER - RESTAURANTER START==========*/
 
@@ -475,7 +463,6 @@ button[type=submit] {
 
 
 /*==========STEDER - RESTAURANTER SLUT==========*/
-
 
 /*==========BOOKING SYSTEM START==========*/
 
@@ -558,7 +545,6 @@ button[type=submit] {
 
 /*==========BOOKING SYSTEM SLUT==========*/
 
-
 /*==========SINGLE START==========*/
 
 #singleinfo {
@@ -582,10 +568,10 @@ button[type=submit] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    z-index: 80;
     text-align: center;
     position: relative;
     max-width: 100%;
+    cursor: pointer;
 }
 
 #billedegrid img {
@@ -616,6 +602,69 @@ button[type=submit] {
     text-align: center;
     position: relative;
     max-width: 100%;
+}
+
+.menukort {
+    z-index: 20;
+    width: 50%;
+    height: 500px;
+}
+
+object {
+    height: 100vh;
+    z-index: 20;
+}
+
+.modal {
+    z-index: 20;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    z-index: 20;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+
+.close {
+    z-index: 20;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
