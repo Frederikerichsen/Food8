@@ -333,6 +333,10 @@ p {
     text-align: center;
 }
 
+#food8billeder img:hover {
+    filter: grayscale(100%);
+}
+
 #food8billeder img {
     height: auto;
     width: 98%;
@@ -343,6 +347,19 @@ p {
     backface-visibility: hidden;
 }
 
+#food8billeder .tekst {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+}
 #food8billeder p {
     vertical-align: middle;
     align-items: center;
@@ -357,27 +374,21 @@ p {
     color: #3d3d3d;
     margin-top: 10px;
 }
-
 #food8billeder h1 {
     text-align: center;
 }
 
-
 /*==========FORSIDE CONTENT SLUT==========*/
-
 
 /*==========GEOLOCATION START==========*/
 
-
 /***********OM FOOD8 STARTR**************/
-
 #omfood8tekst {
     background-color: #f4efe3;
     padding-left: 10px;
     padding-right: 20px;
     padding-top: 20px;
 }
-
 #map {
     height: 400px;
     width: 100%;
@@ -385,18 +396,14 @@ p {
     margin-top: 10px;
 }
 
-
 /*==========GEOLOCATION SLUT==========*/
 
-
 /*==========FOOTER START==========*/
-
 #footergrid {
     margin-bottom: 70px;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 #footercontent {
     align-items: center;
     display: grid;
@@ -407,12 +414,10 @@ p {
     position: relative;
     cursor: pointer;
 }
-
 #so_mefooter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
 #so_mefooter img {
     height: auto;
     width: 20px;
@@ -423,40 +428,32 @@ p {
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
 }
-
 #kontaktoplysninger p {
     text-decoration-color: #3d3d3d;
     letter-spacing: 1.5px
 }
-
 #footergrid p {
     font-family: Cormorant;
     font-size: 17px;
     text-align: left
 }
-
 #strom img {
     height: auto;
     width: 90%;
 }
-
 #kontaktoplysninger p {
     letter-spacing: 1.5px;
     color: #3d3d3d;
 }
 
-
 /*==========FOOTER SLUT==========*/
 
-
 /*==========SÆRARRANGEMENTER START==========*/
-
 #saerarrangementindhold {
     background-color: seashell;
     margin-left: 10%;
     margin-right: 10%;
 }
-
 #saerarrangementtekst {
     justify-content: center;
     margin-top: 10%;
@@ -464,9 +461,7 @@ p {
     margin-left: 10%;
     margin-right: 10%;
 }
-
 #saerarrangementnyheder {}
-
 #saerarrangementbillede {
     margin-top: 40px;
     display: block;
@@ -474,14 +469,12 @@ p {
     margin-right: auto;
     width: 80%;
 }
-
 #saerrangementnyhedstekst {
     justify-content: center;
     margin-left: 7%;
     margin-right: 7%;
     padding-bottom: 4%;
 }
-
 .omfood8tekst {
     justify-content: center;
     margin-left: 10%;
@@ -490,12 +483,9 @@ p {
     background-color: aqua;
 }
 
-
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
-
 /*==========SØGEFUNKTION START==========*/
-
 
 /*
 .search {
@@ -512,22 +502,16 @@ button[type=submit] {
 }
 */
 
-
 /*==========SØGEFUNKTION SLUT==========*/
 
-
 /*==========STEDER - RESTAURANTER START==========*/
-
 .link-more {
     display: none;
 }
 
-
 /*==========STEDER - RESTAURANTER SLUT==========*/
 
-
 /*==========BOOKING SYSTEM START==========*/
-
 .bookBord {
     position: fixed;
     transform: rotate(90deg);
@@ -546,33 +530,38 @@ button[type=submit] {
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
 }
-
 .modalBook {
     display: none;
     /* Hidden by default */
+
     position: fixed;
     /* Stay in place */
+
     z-index: 1;
     /* Sit on top */
+
     padding-top: 100px;
     /* Location of the box */
+
     left: 0;
     top: 0;
     width: 100%;
     /* Full width */
+
     height: 100%;
     /* Full height */
+
     overflow: auto;
     /* Enable scroll if needed */
+
     background-color: rgb(0, 0, 0);
     /* Fallback color */
+
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
 
-
 /* Modal Content */
-
 .modal-contentBook {
     background-color: #fefefe;
     margin: auto;
@@ -582,38 +571,30 @@ button[type=submit] {
     margin-top: -80px;
 }
 
-
 /* The Close Button */
-
 .closeBook {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .closeBook:hover,
 .closeBook:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 .bookingsystem {
     margin-left: -20px;
     margin-top: -15px;
 }
 
-
 /*==========BOOKING SYSTEM SLUT==========*/
 
-
 /*==========SINGLE START==========*/
-
 #singleinfo {
     max-width: 100%;
 }
-
 #tekstdata {
     text-align: left;
     margin-left: 20px;
@@ -626,7 +607,6 @@ button[type=submit] {
     padding-right: 20px;
     text-decoration: none;
 }
-
 #billedegrid {
     align-items: center;
     display: grid;
@@ -637,15 +617,12 @@ button[type=submit] {
     max-width: 100%;
     cursor: pointer;
 }
-
 #billedegrid img {
     max-width: 100%;
 }
-
 #billedelogo img {
     max-width: 100%;
 }
-
 #footer1 {
     align-items: center;
     display: grid;
@@ -656,7 +633,6 @@ button[type=submit] {
     position: relative;
     max-width: 100%;
 }
-
 #footer2 {
     align-items: center;
     display: grid;
@@ -667,45 +643,48 @@ button[type=submit] {
     position: relative;
     max-width: 100%;
 }
-
 .menukort {
     z-index: 20;
     width: 50%;
     height: 500px;
 }
-
 object {
     height: 100vh;
     z-index: 20;
 }
-
 .modal {
     z-index: 20;
     display: none;
     /* Hidden by default */
+
     position: fixed;
     /* Stay in place */
+
     z-index: 1;
     /* Sit on top */
+
     padding-top: 50px;
     /* Location of the box */
+
     left: 0;
     top: 0;
     width: 100%;
     /* Full width */
+
     height: 100%;
     /* Full height */
+
     overflow: auto;
     /* Enable scroll if needed */
+
     background-color: rgb(0, 0, 0);
     /* Fallback color */
+
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
 
-
 /* Modal Content */
-
 .modal-content {
     z-index: 20;
     background-color: #fefefe;
@@ -715,9 +694,7 @@ object {
     width: 80%;
 }
 
-
 /* The Close Button */
-
 .close {
     z-index: 20;
     color: #aaaaaa;
@@ -725,13 +702,11 @@ object {
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /*==========SINGLE SLUT==========*/
