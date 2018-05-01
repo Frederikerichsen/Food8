@@ -2,8 +2,7 @@
 
 let map;
 let markers;
-console.log(markers);
-
+//console.log(markers);
 function initMap() {
     var centrum = {
         lat: 55.685081,
@@ -34,7 +33,7 @@ async function getJson() {
             content: pos.content
 
         });
-        console.log(pos.content);
+        //        console.log(pos.content);
     });
 }
 

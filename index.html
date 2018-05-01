@@ -62,9 +62,10 @@
     <section id=food8>
         <div id="food8billeder">
             <!--            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img data-billede src="" alt=""></a>-->
-            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img data-billede src="" alt="">
-                <p class="text">En aften med Østers</p>
+            <div class="img01">
+                <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf" class="fade"><img data-billede src="" alt="" style="opacity: 1;"><span style="opacity: 0;">En aften med Østers</span>
             </a>
+            </div>
             <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img data-billede2 src="" alt=""></a>
             <a href="#"><img data-billede3 src="" alt=""></a>
             <a href="#"><img data-billede4 src="" alt=""></a>
@@ -87,7 +88,7 @@
                 <a href="http://stromworks.com"><img src="food8_imgs/str%C3%B8m.jpg"></a>
             </div>
             <div id="so_mefooter">
-                <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"></a>
+                <a href="https://www.facebook.com/food8dk/?hc_ref=ARRH2mOLCmYnTsYFwjiy_3pJkXW8GU9K09IZGL3uJZCQ9mX-PltHS6RfVXWDNHK1M90"><img src="food8_imgs/facebook_icon.png"></a>
                 <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
             </div><a href="http://mikkelhein.dk/kea/food8/wordpress/wp-admin/" target="_blank">
             <button class="tilmeld">Login</button></a>
@@ -110,9 +111,8 @@
             document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
             document.querySelector("[data-billede4]").src = forside.acf.forside_billede4;
             document.querySelector("[data-billede5]").src = forside.acf.forside_billede5;
-            //           document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
+            //      document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
         }
-
     </script>
 </body>
 

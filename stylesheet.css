@@ -80,6 +80,7 @@ p {
 .tilmeld {
     background-color: #9bd5c4;
     border: none;
+    cursor: pointer;
     color: white;
     padding: 3px 35px;
     text-align: center;
@@ -338,11 +339,14 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    cursor: default;
 }
 
+
 #food8billeder img:hover {
-    filter: grayscale(100%);
+    filter: grayscale(80%);
 }
+
 
 #food8billeder img {
     height: auto;
@@ -354,19 +358,6 @@ p {
     backface-visibility: hidden;
 }
 
-#food8billeder .tekst {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-
-}
 
 #food8billeder p {
     vertical-align: middle;
@@ -387,6 +378,36 @@ p {
     text-align: center;
 }
 
+/*
+
+.img01 {
+    background: black;
+    float: left;
+    height: 176px;
+    margin-right: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 338px;
+}
+
+.fade span {
+    color: white;
+    left: 0;
+    font-family: 'Josefin Sans';
+    font-size: 21px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 75px;
+    width: 100%;
+}
+
+a {
+    text-decoration: underline;
+    color: #135644;
+}
+*/
+
 /*==========FORSIDE CONTENT SLUT==========*/
 
 /*==========GEOLOCATION START==========*/
@@ -403,7 +424,7 @@ p {
 #map {
     height: 400px;
     width: 100%;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
     margin-top: 10px;
 }
 
@@ -425,7 +446,6 @@ p {
     z-index: 80;
     text-align: center;
     position: relative;
-    cursor: pointer;
 }
 
 #so_mefooter {
@@ -458,6 +478,8 @@ p {
 #strom img {
     height: auto;
     width: 90%;
+    cursor: pointer;
+
 }
 
 #kontaktoplysninger p {
