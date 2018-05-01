@@ -17,7 +17,7 @@ function initMap() {
 }
 
 async function getJson() {
-    let jsonData = await fetch("/04_json/location.json");
+    let jsonData = await fetch("04_json/location.json");
     markers = await jsonData.json();
     markers.forEach(pos => {
         let marker = new google.maps.Marker({
