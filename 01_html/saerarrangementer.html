@@ -52,10 +52,10 @@
     <!--BOOK BORD KNAP SLUT-->
     <!--OM SAERARRANGEMENTINDHOLD START-->
     <section id="saerarrangementindhold">
-        <h1>Arrangementer</h1>
+        <h1 data-overskrift></h1>
         <div id="saerarrangementtekst">
 
-            <p>Hos food8 tilbyder vi forskellige særarrangementer med vores restauranter og steder, som vi huser under samme tag, hos food8.I løbet af sommeren vil de forskellige steder byde på op til flere arrangementer, som vil guide dig gennem en fantastisk smagsoplevelse og sørge for at du og dine venner får de bedste oplevelser. <br> <br> Ved at kigge nedenfor, kan du danne dig et overblik kommende og nuværende arrangementer, hvor de finder sted og hvilke kulinariske oplevelser du kan få. <br>
+            <p data-tekst_arrang><br>
 
             </p>
         </div>
@@ -63,13 +63,13 @@
 
         <div id="saerarrangementnyheder">
 
-            <img id="saerarrangementbillede" src="/food8_imgs/arrangementer/rodderogvinarrang.jpg">
+            <img data-pic_arrang id="saerarrangementbillede" src="">
 
 
-            <img id="saerarrangementbillede" src="/food8_imgs/arrangementer/nohoarrang.jpg">
+            <img data-pic_arrang1 id="saerarrangementbillede" src="">
 
 
-            <img id="saerarrangementbillede" src="/food8_imgs/arrangementer/thefatpikearrang.jpg">
+            <img data-pic_arrang2 id="saerarrangementbillede" src="">
 
 
         </div>
@@ -100,6 +100,20 @@
     <script src="/03_javascript/dropdownmenu.js"></script>
     <script src="/03_javascript/bookBord.js"></script>
     <script src="/03_javascript/location.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", Jason);
+        async function Jason() {
+            var urlParams = new URLSearchParams(window.location.search);
+            let id = urlParams.get("restaurant");
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/saerarrangementer/260/");
+            let arrangementer = await jsonObjekt.json();
+            document.querySelector("[data-tekst_arrang]").textContent = arrangementer.acf.arrangementer_tekst;
+            document.querySelector("[data-pic_arrang]").src = arrangementer.acf.arrangementer_billede;
+            document.querySelector("[data-pic_arrang1]").src = arrangementer.acf.arrangementer_billede2;
+            document.querySelector("[data-pic_arrang2]").src = arrangementer.acf.arrangementer_billede3;
+
+        }
+    </script>
 </body>
 
 </html>
