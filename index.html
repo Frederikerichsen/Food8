@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrangementer</title>
+    <title>Food8.dk</title>
     <link rel="stylesheet" href="/02_css/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
 
 <body>
-
     <!--NYHEDSBREV OG SoMe START-->
     <!--
     <div class="search">
@@ -20,9 +20,9 @@
     <button type="submit"><i class="fa fa-search"></i></button>
 </div>
 -->
+    <div id="search"> <img src="/food8_imgs/serach.jpg" alt="søge knap"> </div>
     <div id="menu">
-        <!--FOOD8 LOGO <START--><a href="index.html"><img id="logo" src="/food8_imgs/logo.png" alt="logo" center>
-        </a>
+        <!--FOOD8 LOGO START--><img id="logo" src="/food8_imgs/logo.png" alt="logo" center>
         <!--FOOD8 LOGO SLUT-->
         <!--NYHEDSBREV OG SoMe SLUT-->
         <!--DROPDOWN MENU START-->
@@ -33,15 +33,11 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </button>
-                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a>
-                    <a href="/01_html/mad-steder.html">MAD - STEDER</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/omfood8.html">OM FOOD8</a>
-                </div>
-
+                <div id="myDropdown" class="dropdown-content"> <a href="index.html">FORSIDE</a> <a href="saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="omfood8.html">OM FOOD8</a> <a href="mad-steder.html">MAD - STEDER</a> </div>
             </div>
         </div>
     </div>
     <!--DROPDOWN MENU SLUT-->
-
     <!--BOOK BORD KNAP START-->
     <button id="bookBtn" class="bookBord">Book Bord</button>
     <div id="bookModal" class="modalBook">
@@ -50,36 +46,33 @@
         </div>
     </div>
     <!--BOOK BORD KNAP SLUT-->
-    <!--OM SAERARRANGEMENTINDHOLD START-->
-    <section id="saerarrangementindhold">
+    <!--OM FOOD8 START-->
+    <div id="omfood8">
         <h1 data-overskrift></h1>
-        <div id="saerarrangementtekst">
-
-            <p data-tekst_arrang><br>
-
-            </p>
+        <p data-tekst></p>
+    </div>
+    <div id="omNyhedsbrev">
+        <a href="/05_php/tilmeldbesked.html">
+            <button class="tilmeldforside"> Tilmeld Nyhedsbrev</button>
+        </a>
+        <p data-tekst2></p>
+    </div>
+    <!--OM FOOD8 SLUT-->
+    <!--INDHOLD START-->
+    <section id=food8>
+        <div id="food8billeder">
+            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img data-billede src="" alt=""></a>
+            <p data-tekst3></p>
+            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img data-billede2 src="" alt=""></a>
+            <p data-tekst4></p>
+            <a href="#"><img data-billede3 src="" alt=""></a>
+            <p data-tekst5></p>
         </div>
-
-
-        <div id="saerarrangementnyheder">
-
-            <img data-pic_arrang id="saerarrangementbillede" src="">
-
-
-            <img data-pic_arrang1 id="saerarrangementbillede" src="">
-
-
-            <img data-pic_arrang2 id="saerarrangementbillede" src="">
-
-
-        </div>
-
-
     </section>
-
-    <!--OM SAERARRANGEMENTINDHOLD SLUT-->
-
-
+    <!--INDHOLD SLUT-->
+    <!--GEOLOCATION - MAP START-->
+    <div id="map"></div>
+    <!--GEOLOCATION - MAP SLUT-->
     <!--FOOTER START-->
     <footer id="footergrid">
         <div id="footercontent">
@@ -89,7 +82,7 @@
                 <p>CVR nr. 39306999</p>
             </div>
             <div id="strom">
-                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.png"></a>
+                <a href="http://stromworks.com"><img src="/food8_imgs/str%C3%B8m.jpg"></a>
             </div>
             <div id="so_mefooter">
                 <a href="https://www.facebook.com/search/top/?q=food8"><img src="/food8_imgs/facebook_icon.png"></a>
@@ -102,18 +95,23 @@
     <script src="/03_javascript/dropdownmenu.js"></script>
     <script src="/03_javascript/bookBord.js"></script>
     <script src="/03_javascript/location.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
     <script>
         document.addEventListener("DOMContentLoaded", Jason);
         async function Jason() {
             var urlParams = new URLSearchParams(window.location.search);
             let id = urlParams.get("restaurant");
-            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/saerarrangementer/260/");
-            let arrangementer = await jsonObjekt.json();
-            document.querySelector("[data-tekst_arrang]").textContent = arrangementer.acf.arrangementer_tekst;
-            document.querySelector("[data-pic_arrang]").src = arrangementer.acf.arrangementer_billede;
-            document.querySelector("[data-pic_arrang1]").src = arrangementer.acf.arrangementer_billede2;
-            document.querySelector("[data-pic_arrang2]").src = arrangementer.acf.arrangementer_billede3;
-
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/forsidecontent/255/");
+            let forside = await jsonObjekt.json();
+            document.querySelector("[data-tekst]").textContent = forside.acf.forside_tekst4;
+            document.querySelector("[data-tekst2]").textContent = forside.acf.forside_tekst5;
+            document.querySelector("[data-billede]").src = forside.acf.forside_billede3;
+            document.querySelector("[data-tekst3]").textContent = forside.acf.tekst_forside;
+            document.querySelector("[data-billede2]").src = forside.acf.forside_billede2;
+            document.querySelector("[data-tekst4]").textContent = forside.acf.tekst_foside2;
+            document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
+            document.querySelector("[data-tekst5]").textContent = forside.acf.forside_tekst3;
+            document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
         }
     </script>
 </body>
