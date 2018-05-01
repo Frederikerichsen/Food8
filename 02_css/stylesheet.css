@@ -6,6 +6,8 @@ body {
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
     margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -22,6 +24,7 @@ body {
 
 
 /*==========GENERAL SETUP==========*/
+
 
 /*==========TYPOGRAFI START==========*/
 
@@ -48,6 +51,7 @@ p {
 
 /*==========TYPOGRAFI SLUT==========*/
 
+
 /*==========TOP MENU START==========*/
 
 #logo {
@@ -68,7 +72,6 @@ p {
 }
 
 .tilmeld {
-    border-radius: 10px;
     background-color: #9bd5c4;
     border: none;
     color: white;
@@ -104,8 +107,7 @@ p {
     border-radius: 1%;
     cursor: pointer;
     position: absolute;
-    bottom: 217px;
-    border-radius: 10px;
+    bottom: 250px;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
 }
@@ -113,9 +115,10 @@ p {
 #omNyhedsbrev p {
     margin: 5px;
     padding: 20px;
-    color: wh;
-    text-align: center;
+    color: #3d3d3d;
+    text-align: left;
     vertical-align: middle;
+    font-size: 19px;
 }
 
 #so_metop img {
@@ -137,6 +140,7 @@ p {
 
 
 /*==========TOP MENU SLUT==========*/
+
 
 /*==========BURGER MENU START==========*/
 
@@ -174,7 +178,7 @@ p {
 
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 .dropdown {
@@ -195,6 +199,7 @@ p {
 }
 
 .dropdown-content a {
+    background-color: white;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -211,11 +216,32 @@ p {
 
 /*==========BURGER MENU SLUT==========*/
 
+
 /*==========FORSIDE CONTENT START==========*/
 
-#info {
+#info p {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    text-align: left;
+    text-decoration: none;
+}
+
+#info h2 {
     text-align: center;
-    vertical-align: middle;
+}
+
+#info img {
+    height: auto;
+    max-width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
 }
 
 #nyhedsbrev {
@@ -245,14 +271,14 @@ p {
     color: #3d3d3d;
     text-align: center;
     vertical-align: middle;
+    font-size: 19px;
 }
 
 #omfood8 h1 {
-    margin: 5px;
-    padding: 20px;
     color: #3d3d3d;
     text-align: center;
     vertical-align: middle;
+    font-size: 23px;
 }
 
 #food8billeder {
@@ -264,9 +290,8 @@ p {
 
 #food8billeder img {
     height: auto;
-    ;
     width: 100%;
-    margin-top: 2.67px;
+    margin-top: 10px;
 }
 
 #food8billeder p {
@@ -277,9 +302,11 @@ p {
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: #f1f4e3;
+    background-color: #f4ebe3;
     margin: 2.67px;
-    font-size: 17px;
+    font-size: 16px;
+    color: #3d3d3d;
+    margin-top: 10px;
 }
 
 #food8billeder h1 {
@@ -289,7 +316,9 @@ p {
 
 /*==========FORSIDE CONTENT SLUT==========*/
 
+
 /*==========GEOLOCATION START==========*/
+
 
 /***********OM FOOD8 STARTR**************/
 
@@ -304,10 +333,12 @@ p {
     height: 400px;
     width: 100%;
     filter: grayscale(100%);
+    margin-top: 10px;
 }
 
 
 /*==========GEOLOCATION SLUT==========*/
+
 
 /*==========FOOTER START==========*/
 
@@ -335,10 +366,9 @@ p {
 
 #so_mefooter img {
     height: auto;
-    width: 30px;
+    width: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
     margin: 10px;
     border-radius: 1%;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -368,6 +398,7 @@ p {
 
 
 /*==========FOOTER SLUT==========*/
+
 
 /*==========SÆRARRANGEMENTER START==========*/
 
@@ -413,7 +444,9 @@ p {
 
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
+
 /*==========SØGEFUNKTION START==========*/
+
 
 /*
 .search {
@@ -430,7 +463,9 @@ button[type=submit] {
 }
 */
 
+
 /*==========SØGEFUNKTION SLUT==========*/
+
 
 /*==========STEDER - RESTAURANTER START==========*/
 
@@ -441,14 +476,14 @@ button[type=submit] {
 
 /*==========STEDER - RESTAURANTER SLUT==========*/
 
+
 /*==========BOOKING SYSTEM START==========*/
 
 .bookBord {
     position: fixed;
     transform: rotate(90deg);
     right: -42px;
-    top: 390px;
-    border-radius: 10px;
+    top: 150px;
     background-color: #9bd5c4;
     border: none;
     color: white;
@@ -523,6 +558,7 @@ button[type=submit] {
 
 /*==========BOOKING SYSTEM SLUT==========*/
 
+
 /*==========SINGLE START==========*/
 
 #singleinfo {
@@ -530,7 +566,15 @@ button[type=submit] {
 }
 
 #tekstdata {
-    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f4efe3;
+    margin-top: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #billedegrid {
@@ -573,5 +617,6 @@ button[type=submit] {
     position: relative;
     max-width: 100%;
 }
+
 
 /*==========SINGLE SLUT==========*/

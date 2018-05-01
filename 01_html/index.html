@@ -31,9 +31,7 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </button>
-                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/omfood8.html">OM FOOD8</a> <a href="/01_html/mad-steder.html">MAD - STEDER</a>
-                </div>
-
+                <div id="myDropdown" class="dropdown-content"> <a href="/01_html/index.html">FORSIDE</a> <a href="/01_html/saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="/01_html/omfood8.html">OM FOOD8</a> <a href="/01_html/mad-steder.html">MAD - STEDER</a> </div>
             </div>
         </div>
     </div>
@@ -98,16 +96,11 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
     <script>
         document.addEventListener("DOMContentLoaded", Jason);
-
         async function Jason() {
-
             var urlParams = new URLSearchParams(window.location.search);
             let id = urlParams.get("restaurant");
-
             let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/forsidecontent/255/");
-
             let forside = await jsonObjekt.json();
-
             document.querySelector("[data-tekst]").textContent = forside.acf.forside_tekst4;
             document.querySelector("[data-tekst2]").textContent = forside.acf.forside_tekst5;
             document.querySelector("[data-billede]").src = forside.acf.forside_billede3;
@@ -117,8 +110,6 @@
             document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
             document.querySelector("[data-tekst5]").textContent = forside.acf.forside_tekst3;
             document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
-
-
         }
     </script>
 </body>
