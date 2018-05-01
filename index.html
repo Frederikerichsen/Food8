@@ -33,7 +33,8 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </button>
-                <div id="myDropdown" class="dropdown-content"> <a href="index.html">FORSIDE</a> <a href="mad-steder.html">MAD</a> <a href="saerarrangementer.html">EVENTS</a> <a href="omfood8.html">OM FOOD8</a> </div>
+                <div id="myDropdown" class="dropdown-content"> <a href="index.html">FORSIDE</a>
+                    <a href="mad-steder.html">MAD - STEDER</a> <a href="saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="omfood8.html">OM FOOD8</a> </div>
             </div>
         </div>
     </div>
@@ -49,24 +50,22 @@
     <!--OM FOOD8 START-->
     <div id="omfood8">
         <h1 data-overskrift></h1>
-        <p data-tekst></p>
     </div>
     <div id="omNyhedsbrev">
         <a href="/05_php/tilmeldbesked.html">
             <button class="tilmeldforside"> Tilmeld Nyhedsbrev</button>
         </a>
-        <p data-tekst2></p>
     </div>
     <!--OM FOOD8 SLUT-->
     <!--INDHOLD START-->
     <section id=food8>
         <div id="food8billeder">
             <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img data-billede src="" alt=""></a>
-            <p data-tekst3></p>
             <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img data-billede2 src="" alt=""></a>
-            <p data-tekst4></p>
             <a href="#"><img data-billede3 src="" alt=""></a>
-            <p data-tekst5></p>
+            <a href="#"><img data-billede4 src="" alt=""></a>
+            <a href="#"><img data-billede5 src="" alt=""></a>
+
         </div>
     </section>
     <!--INDHOLD SLUT-->
@@ -104,16 +103,14 @@
             let id = urlParams.get("restaurant");
             let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/forsidecontent/255/");
             let forside = await jsonObjekt.json();
-            document.querySelector("[data-tekst]").textContent = forside.acf.forside_tekst4;
-            document.querySelector("[data-tekst2]").textContent = forside.acf.forside_tekst5;
             document.querySelector("[data-billede]").src = forside.acf.forside_billede3;
-            document.querySelector("[data-tekst3]").textContent = forside.acf.tekst_forside;
             document.querySelector("[data-billede2]").src = forside.acf.forside_billede2;
-            document.querySelector("[data-tekst4]").textContent = forside.acf.tekst_foside2;
             document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
-            document.querySelector("[data-tekst5]").textContent = forside.acf.forside_tekst3;
+            document.querySelector("[data-billede4]").src = forside.acf.billede_forside;
+            document.querySelector("[data-billede5]").src = forside.acf.billede_forside;
             document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
         }
+
     </script>
 </body>
 
