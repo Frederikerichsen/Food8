@@ -101,16 +101,15 @@
         async function Jason() {
             var urlParams = new URLSearchParams(window.location.search);
             let id = urlParams.get("restaurant");
-            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/forsidecontent/255/");
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/forsidecontent/252/");
             let forside = await jsonObjekt.json();
             document.querySelector("[data-billede]").src = forside.acf.forside_billede3;
             document.querySelector("[data-billede2]").src = forside.acf.forside_billede2;
             document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
-            document.querySelector("[data-billede4]").src = forside.acf.billede_forside;
-            document.querySelector("[data-billede5]").src = forside.acf.billede_forside;
+            document.querySelector("[data-billede4]").src = forside.acf.forside_billede4;
+            document.querySelector("[data-billede5]").src = forside.acf.forside_billede5;
             document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
         }
-
     </script>
 </body>
 
