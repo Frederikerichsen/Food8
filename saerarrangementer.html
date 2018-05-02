@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
 
 <body>
-
     <!--NYHEDSBREV OG SoMe START-->
     <!--
     <div class="search">
@@ -39,7 +37,6 @@
         <div id="search"> <img src="food8_imgs/serach.jpg" alt="søge knap"> </div>
     </div>
     <!--DROPDOWN MENU SLUT-->
-
     <!--BOOK BORD KNAP START-->
     <button id="bookBtn" class="bookBord">Book Bord</button>
     <div id="bookModal" class="modalBook">
@@ -52,32 +49,12 @@
     <section id="saerarrangementindhold">
         <h1 data-overskrift src=""> </h1>
         <div id="saerarrangementtekst">
-
-            <p data-tekst_arrang><br>
-
-            </p>
+            <p data-tekst_arrang>
+                <br> </p>
         </div>
-
-
-        <div id="saerarrangementnyheder">
-
-            <img data-pic_arrang id="saerarrangementbillede" src="">
-
-
-            <img data-pic_arrang1 id="saerarrangementbillede" src="">
-
-
-            <img data-pic_arrang2 id="saerarrangementbillede" src="">
-
-
-        </div>
-
-
+        <div id="saerarrangementnyheder"> <img data-pic_arrang id="saerarrangementbillede" src=""> <img data-pic_arrang1 id="saerarrangementbillede" src=""> <img data-pic_arrang2 id="saerarrangementbillede" src=""> </div>
     </section>
-
     <!--OM SAERARRANGEMENTINDHOLD SLUT-->
-
-
     <!--FOOTER START-->
     <footer id="footergrid">
         <div id="footercontent">
@@ -93,7 +70,7 @@
                 <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"></a>
                 <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
             </div>
-            <button class="tilmeld">LOGIN</button>
+            <button class="tilmeld">Login</button>
         </div>
     </footer>
     <!--FOOTER SLUT-->
@@ -112,7 +89,6 @@
             document.querySelector("[data-pic_arrang1]").src = arrangementer.acf.arrangementer_billede2;
             document.querySelector("[data-pic_arrang2]").src = arrangementer.acf.arrangementer_billede3;
             document.querySelector("[data-overskrift]").innerHTML = arrangementer.title.rendered;
-
         }
     </script>
 </body>
