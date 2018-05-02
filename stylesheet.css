@@ -228,7 +228,7 @@ p {
 
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: #f4efe3;
+    background-color: seashell;
 }
 
 .dropdown {
@@ -262,7 +262,7 @@ p {
 
 .dropdown a:hover {
     /*    background-color: rgba(255, 255, 255, 0.50);*/
-    background-color: #f4efe3;
+    background-color: seashell;
 }
 
 .show {
