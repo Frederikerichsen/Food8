@@ -26,6 +26,7 @@ body {
 
 /*==========GENERAL SETUP==========*/
 
+
 /*==========TYPOGRAFI START==========*/
 
 a {
@@ -51,6 +52,7 @@ p {
 
 /*==========TYPOGRAFI SLUT==========*/
 
+
 /*==========TOP MENU START==========*/
 
 #logo {
@@ -75,7 +77,6 @@ p {
     background-color: white;
     padding: 8px;
     margin-left: 20px;
-
 }
 
 .tilmeld {
@@ -191,6 +192,7 @@ p {
 
 /*==========TOP MENU SLUT==========*/
 
+
 /*==========BURGER MENU START==========*/
 
 .bar1,
@@ -270,6 +272,7 @@ p {
 
 /*==========BURGER MENU SLUT==========*/
 
+
 /*==========FORSIDE CONTENT START==========*/
 
 #nyhedsbrev {
@@ -282,6 +285,7 @@ p {
     background-color: white;
     text-align: center;
 }
+
 
 /* OM FOOD 8 */
 
@@ -316,9 +320,7 @@ p {
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
     padding-bottom: 20px;
-
     padding-top: 20px;
-
     /*border-top: 10px;
     border-top-color: #9bd5c4;
     border-top-style: dotted;
@@ -330,7 +332,6 @@ p {
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
     padding-bottom: 20px;
-
     padding-top: 20px;
 }
 
@@ -339,9 +340,9 @@ p {
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
     padding-bottom: 20px;
-
     padding-top: 20px;
 }
+
 
 /* OM SLUT */
 
@@ -430,7 +431,6 @@ p {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-
 }
 
 
@@ -446,11 +446,13 @@ p {
     filter: brightness(50%);
 }
 
+
 /*
 .billede2:hover .middle {
     opacity: 1;
 }
 */
+
 
 /*
 
@@ -482,9 +484,12 @@ a {
 }
 */
 
+
 /*==========FORSIDE CONTENT SLUT==========*/
 
+
 /*==========GEOLOCATION START==========*/
+
 
 /***********OM FOOD8 STARTR**************/
 
@@ -504,6 +509,7 @@ a {
 
 
 /*==========GEOLOCATION SLUT==========*/
+
 
 /*==========FOOTER START==========*/
 
@@ -565,6 +571,7 @@ a {
 
 /*==========FOOTER SLUT==========*/
 
+
 /*==========SÆRARRANGEMENTER START==========*/
 
 #saerarrangementindhold {
@@ -580,7 +587,6 @@ a {
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-
     border-bottom: 10px;
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
@@ -595,7 +601,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-
     border-bottom: 10px;
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
@@ -620,7 +625,9 @@ a {
 
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
+
 /*==========SØGEFUNKTION START==========*/
+
 
 /*
 .search {
@@ -637,7 +644,9 @@ button[type=submit] {
 }
 */
 
+
 /*==========SØGEFUNKTION SLUT==========*/
+
 
 /*==========STEDER - RESTAURANTER START==========*/
 
@@ -658,7 +667,6 @@ button[type=submit] {
     text-decoration: none;
 }
 
-
 #h2link {
     text-decoration: none;
 }
@@ -669,12 +677,10 @@ button[type=submit] {
     padding-left: 20px;
     padding-right: 20px;
     background-color: white;
-
     border-bottom: 10px;
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
     padding-bottom: 20px;
-
     justify-content: center;
 }
 
@@ -686,6 +692,7 @@ a {
 
 
 /*==========STEDER - RESTAURANTER SLUT==========*/
+
 
 /*==========BOOKING SYSTEM START==========*/
 
@@ -770,6 +777,7 @@ a {
 
 
 /*==========BOOKING SYSTEM SLUT==========*/
+
 
 /*==========SINGLE START==========*/
 
