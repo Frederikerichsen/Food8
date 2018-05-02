@@ -74,6 +74,7 @@ p {
     background-color: white;
     padding: 8px;
     margin-left: 20px;
+
 }
 
 .tilmeld {
@@ -260,31 +261,6 @@ p {
 
 /*==========FORSIDE CONTENT START==========*/
 
-#info p {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: white;
-    text-align: left;
-    text-decoration: none;
-}
-
-#info h2 {
-    text-align: center;
-}
-
-#info img {
-    height: auto;
-    max-width: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: white;
-    text-align: center;
-    border-bottom: 10px;
-    border-bottom-color: #9bd5c4;
-    border-bottom-style: dotted;
-    padding-bottom: 20px;
-}
-
 #nyhedsbrev {
     vertical-align: middle;
     align-items: flex-end;
@@ -295,6 +271,8 @@ p {
     background-color: white;
     text-align: center;
 }
+
+/* OM FOOD 8 */
 
 #omfood8 {
     vertical-align: middle;
@@ -321,6 +299,40 @@ p {
     vertical-align: middle;
     font-size: 23px;
 }
+
+#omintro-tekst {
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+
+    padding-top: 20px;
+
+    /*border-top: 10px;
+    border-top-color: #9bd5c4;
+    border-top-style: dotted;
+    padding-top: 20px;*/
+}
+
+#omfood8-tekst {
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+
+    padding-top: 20px;
+}
+
+#omkontakt-tekst {
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+
+    padding-top: 20px;
+}
+
+/* OM SLUT */
 
 #food8billeder {
     vertical-align: baseline;
@@ -451,6 +463,11 @@ p {
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
+
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
 }
 
 #saerarrangementnyheder {}
@@ -461,6 +478,11 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
 }
 
 #saerrangementnyhedstekst {
@@ -504,6 +526,40 @@ button[type=submit] {
 
 .link-more {
     display: none;
+}
+
+#info {
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 50px;
+}
+
+#info p {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    text-decoration: none;
+}
+
+#restaurantoverskrift {}
+
+#info h2 {
+    text-align: center;
+}
+
+#info img {
+    height: auto;
+    max-width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+
+    border-bottom: 10px;
+    border-bottom-color: #9bd5c4;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+
+    justify-content: center;
 }
 
 

@@ -51,7 +51,9 @@
     <section id="modtager">
         <div id="tekstdata">
             <h2 data-navn></h2>
-            <p data-tekst></p>
+            <p id="omintro-tekst" data-intro></p>
+            <p id="omfood8-tekst" data-food8></p>
+            <p id="omkontakt-tekst" data-kontakt></p>
             <br>
             <a href="/05_php/tilmeldbesked.html">
                 <button class="blivfood8"> Bliv en del af Food8</button>
@@ -92,8 +94,11 @@
             let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/omfood8/257");
             let single = await jsonObjekt.json();
             document.querySelector("[data-navn]").innerHTML = single.title.rendered;
-            document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
+            document.querySelector("[data-intro]").innerHTML = single.content.rendered;
+            document.querySelector("[data-food8]").innerHTML = single.acf.food8;
+            document.querySelector("[data-kontakt]").innerHTML = single.acf.kontakt;
         }
+
     </script>
 </body>
 
