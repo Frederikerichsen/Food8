@@ -570,6 +570,8 @@ a {
     background-color: seashell;
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #saerarrangementtekst {
@@ -582,7 +584,7 @@ a {
     border-bottom: 10px;
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #saerarrangementnyheder {}
@@ -596,7 +598,7 @@ a {
     border-bottom: 10px;
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #saerrangementnyhedstekst {
