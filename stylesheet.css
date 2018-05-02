@@ -91,6 +91,7 @@ p {
     font-size: 14px;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
+    height: 36px;
 }
 
 #omNyhedsbrev {
@@ -455,13 +456,14 @@ a {
 
 #so_mefooter img {
     height: auto;
-    width: 20px;
+    width: 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 10px;
     border-radius: 1%;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
+    margin-bottom: 15px;
 }
 
 #kontaktoplysninger p {
@@ -603,6 +605,7 @@ button[type=submit] {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
+    z-index: 999999;
 }
 
 /* Modal Content */
