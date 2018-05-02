@@ -20,12 +20,10 @@
     <button type="submit"><i class="fa fa-search"></i></button>
 </div>
 -->
-    <div id="search"> <img src="food8_imgs/serach.jpg" alt="søge knap"> </div>
     <div id="menu">
-        <!--FOOD8 LOGO <START-->
+        <!--FOOD8 LOGO START-->
         <a href="index.html"><img id="logo" src="food8_imgs/logo.png" alt="logo" center> </a>
         <!--FOOD8 LOGO SLUT-->
-        <!--NYHEDSBREV OG SoMe SLUT-->
         <!--DROPDOWN MENU START-->
         <div class="navbar">
             <div class="dropdown">
@@ -34,9 +32,10 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </button>
-                <div id="myDropdown" class="dropdown-content"> <a href="index.html">FORSIDE</a> <a href="mad-steder.html">MAD - STEDER</a> <a href="saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="omfood8.html">OM FOOD8</a> </div>
+                <div id="myDropdown" class="dropdown-content"> <a href="index.html">Forside</a> <a href="mad-steder.html">Mad og steder</a> <a href="saerarrangementer.html">Events</a> <a href="omfood8.html">Om Food8</a> </div>
             </div>
         </div>
+        <div id="search"> <img src="food8_imgs/serach.jpg" alt="søge knap"> </div>
     </div>
     <!--DROPDOWN MENU SLUT-->
     <!--BOOK BORD KNAP START-->
@@ -51,13 +50,12 @@
     <section id="modtager">
         <div id="tekstdata">
             <h2 data-navn></h2>
-            <p data-tekst></p>
+            <p id="omintro-tekst" data-intro></p>
+            <p id="omkontakt-tekst" data-kontakt></p>
+            <p id="omfood8-tekst" data-food8></p>
             <br>
             <a href="/05_php/tilmeldbesked.html">
-                <button class="blivfood8"> Bliv en del af Food8</button>
-            </a>
-            <a href="/05_php/tilmeldbesked.html">
-                <button class="tilmeldom"> Tilmeld Nyhedsbrev</button>
+                <button class="blivfood8"> Mad-Guide</button>
             </a>
         </div>
     </section>
@@ -90,9 +88,10 @@
             let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/omfood8/257");
             let single = await jsonObjekt.json();
             document.querySelector("[data-navn]").innerHTML = single.title.rendered;
-            document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
+            document.querySelector("[data-intro]").innerHTML = single.content.rendered;
+            document.querySelector("[data-food8]").innerHTML = single.acf.food8;
+            document.querySelector("[data-kontakt]").innerHTML = single.acf.kontakt;
         }
-
     </script>
 </body>
 
