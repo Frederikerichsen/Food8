@@ -654,10 +654,8 @@ button[type=submit] {
     text-decoration: none;
 }
 
-#restaurantoverskrift {}
-
-#info h2 {
-    text-align: center;
+#h2link {
+    text-decoration: none;
 }
 
 #info img {
@@ -673,6 +671,12 @@ button[type=submit] {
     padding-bottom: 20px;
 
     justify-content: center;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+    /* or whatever colour your text is */
 }
 
 
