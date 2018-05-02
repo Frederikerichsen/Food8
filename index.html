@@ -20,12 +20,9 @@
     <button type="submit"><i class="fa fa-search"></i></button>
 </div>
 -->
-
     <div id="menu">
         <!--FOOD8 LOGO START-->
-        <a href="index.html"><img id="logo" src="food8_imgs/logo.png" alt="logo" center>
-        </a>
-
+        <a href="index.html"><img id="logo" src="food8_imgs/logo.png" alt="logo" center> </a>
         <!--FOOD8 LOGO SLUT-->
         <!--DROPDOWN MENU START-->
         <div class="navbar">
@@ -63,13 +60,27 @@
         <div id="food8billeder">
             <!--            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img data-billede src="" alt=""></a>-->
             <div class="img01">
-                <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf" class="fade"><img data-billede src="" alt="" style="opacity: 1;"><span style="opacity: 0;">En aften med Østers</span>
-            </a>
+                <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf" class="fade"><img data-billede src="" alt="" style="opacity: 1;"><span style="opacity: 0;">En aften med Østers</span> </a>
             </div>
-            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img data-billede2 src="" alt=""></a>
-            <a href="#"><img data-billede3 src="" alt=""></a>
-            <a href="#"><img data-billede4 src="" alt=""></a>
-            <a href="#"><img data-billede5 src="" alt=""></a>
+            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/">
+                <div class="billede2"> <img class="img02" data-billede2 src="" alt="">
+                    <div class="middle">
+                        <div class="text">Biodynamisk vinsmagning </div>
+                    </div>
+                </div>
+            </a>
+            <div class="billede3">
+                <a href="#"><img data-billede3 src="" alt=""></a>
+            </div>
+            <div class="billede4">
+                <a href="#"><img data-billede4 src="" alt=""></a>
+            </div>
+            <div class="billede5">
+                <a href="#"><img data-billede5 src="" alt=""></a>
+            </div>
+            <div class="billede6">
+                <a href="#"><img data-billede6 src="" alt=""></a>
+            </div>
         </div>
     </section>
     <!--INDHOLD SLUT-->
@@ -90,8 +101,10 @@
             <div id="so_mefooter">
                 <a href="https://www.facebook.com/food8dk/?hc_ref=ARRH2mOLCmYnTsYFwjiy_3pJkXW8GU9K09IZGL3uJZCQ9mX-PltHS6RfVXWDNHK1M90"><img src="food8_imgs/facebook_icon.png"></a>
                 <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
-            </div><a href="http://mikkelhein.dk/kea/food8/wordpress/wp-admin/" target="_blank">
-            <button class="tilmeld">Login</button></a>
+            </div>
+            <a href="http://mikkelhein.dk/kea/food8/wordpress/wp-admin/" target="_blank">
+                <button class="tilmeld">Login</button>
+            </a>
         </div>
     </footer>
     <!--FOOTER SLUT-->
@@ -111,6 +124,7 @@
             document.querySelector("[data-billede3]").src = forside.acf.billede_forside;
             document.querySelector("[data-billede4]").src = forside.acf.forside_billede4;
             document.querySelector("[data-billede5]").src = forside.acf.forside_billede5;
+            document.querySelector("[data-billede6]").src = forside.acf.forside_billede6;
             //      document.querySelector("[data-overskrift]").textContent = forside.title.rendered;
         }
     </script>

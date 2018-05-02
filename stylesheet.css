@@ -8,6 +8,7 @@ body {
     margin: 0;
     margin-right: 10px;
     margin-left: 10px;
+    padding: 1em 1em 2em 1em;
 }
 
 
@@ -24,6 +25,7 @@ body {
 
 
 /*==========GENERAL SETUP==========*/
+
 
 /*==========TYPOGRAFI START==========*/
 
@@ -50,6 +52,7 @@ p {
 
 /*==========TYPOGRAFI SLUT==========*/
 
+
 /*==========TOP MENU START==========*/
 
 #logo {
@@ -65,7 +68,6 @@ p {
     margin-left: -8px;
     margin-top: -20px;
 }
-
 
 #menu {
     display: grid;
@@ -188,6 +190,7 @@ p {
 
 /*==========TOP MENU SLUT==========*/
 
+
 /*==========BURGER MENU START==========*/
 
 .bar1,
@@ -230,7 +233,6 @@ p {
     float: right;
     position: relative;
     display: inline-block;
-
 }
 
 .dropdown-content {
@@ -242,7 +244,6 @@ p {
     box-shadow: 0px 8px 16px 0px #3d3d3d;
     right: 0;
     z-index: 1;
-
 }
 
 .dropdown-content a {
@@ -255,7 +256,6 @@ p {
     font-family: Montserrat;
     font-size: 14px;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 2);
-
 }
 
 .dropdown a:hover {
@@ -269,6 +269,7 @@ p {
 
 
 /*==========BURGER MENU SLUT==========*/
+
 
 /*==========FORSIDE CONTENT START==========*/
 
@@ -335,29 +336,31 @@ p {
 }
 
 #food8billeder {
-    vertical-align: baseline;
+    vertical-align: middle;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px 0px 10px;
     cursor: default;
 }
 
 
+/*
 #food8billeder img:hover {
     filter: grayscale(80%);
 }
-
+*/
 
 #food8billeder img {
     height: auto;
-    width: 98%;
-    margin-top: 10px;
+    max-width: 99%;
     opacity: 1;
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
+    transition: .5s ease;
+    backface-visibility:
 }
-
 
 #food8billeder p {
     vertical-align: middle;
@@ -377,6 +380,65 @@ p {
 #food8billeder h1 {
     text-align: center;
 }
+
+.billede5 {
+    margin-top: -29px;
+}
+
+.billede6 {
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+.billede4 {
+    margin-top: -2px;
+}
+
+.billede3 {
+    margin-top: -15px;
+}
+
+.img01 {
+    z-index: 200;
+}
+
+.billede2 {}
+
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: Montserrat;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*
+#food8billeder img:hover {
+    background-color: black;
+}
+*/
+
+.billede2:hover img {
+    opacity: 0.9;
+    filter: grayscale(80%);
+    filter: brightness(50%);
+}
+
+.billede2:hover .middle {
+    opacity: 1;
+}
+
 
 /*
 
@@ -408,9 +470,12 @@ a {
 }
 */
 
+
 /*==========FORSIDE CONTENT SLUT==========*/
 
+
 /*==========GEOLOCATION START==========*/
+
 
 /***********OM FOOD8 STARTR**************/
 
@@ -428,7 +493,9 @@ a {
     margin-top: 10px;
 }
 
+
 /*==========GEOLOCATION SLUT==========*/
+
 
 /*==========FOOTER START==========*/
 
@@ -479,7 +546,6 @@ a {
     height: auto;
     width: 90%;
     cursor: pointer;
-
 }
 
 #kontaktoplysninger p {
@@ -487,7 +553,9 @@ a {
     color: #3d3d3d;
 }
 
+
 /*==========FOOTER SLUT==========*/
+
 
 /*==========SÆRARRANGEMENTER START==========*/
 
@@ -530,9 +598,12 @@ a {
     background-color: aqua;
 }
 
+
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
+
 /*==========SØGEFUNKTION START==========*/
+
 
 /*
 .search {
@@ -549,7 +620,9 @@ button[type=submit] {
 }
 */
 
+
 /*==========SØGEFUNKTION SLUT==========*/
+
 
 /*==========STEDER - RESTAURANTER START==========*/
 
@@ -557,7 +630,9 @@ button[type=submit] {
     display: none;
 }
 
+
 /*==========STEDER - RESTAURANTER SLUT==========*/
+
 
 /*==========BOOKING SYSTEM START==========*/
 
@@ -605,6 +680,7 @@ button[type=submit] {
     /* Black w/ opacity */
 }
 
+
 /* Modal Content */
 
 .modal-contentBook {
@@ -615,6 +691,7 @@ button[type=submit] {
     width: 350px;
     margin-top: -80px;
 }
+
 
 /* The Close Button */
 
@@ -637,7 +714,9 @@ button[type=submit] {
     margin-top: -15px;
 }
 
+
 /*==========BOOKING SYSTEM SLUT==========*/
+
 
 /*==========SINGLE START==========*/
 
@@ -734,6 +813,7 @@ object {
     /* Black w/ opacity */
 }
 
+
 /* Modal Content */
 
 .modal-content {
@@ -744,6 +824,7 @@ object {
     border: 1px solid #888;
     width: 80%;
 }
+
 
 /* The Close Button */
 
@@ -761,5 +842,6 @@ object {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 /*==========SINGLE SLUT==========*/
