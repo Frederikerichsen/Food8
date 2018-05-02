@@ -26,6 +26,7 @@ body {
 
 /*==========GENERAL SETUP==========*/
 
+
 /*==========TYPOGRAFI START==========*/
 
 a {
@@ -50,6 +51,7 @@ p {
 
 
 /*==========TYPOGRAFI SLUT==========*/
+
 
 /*==========TOP MENU START==========*/
 
@@ -190,6 +192,7 @@ p {
 
 /*==========TOP MENU SLUT==========*/
 
+
 /*==========BURGER MENU START==========*/
 
 .bar1,
@@ -268,6 +271,7 @@ p {
 
 
 /*==========BURGER MENU SLUT==========*/
+
 
 /*==========FORSIDE CONTENT START==========*/
 
@@ -409,8 +413,6 @@ p {
     z-index: 200;
 }
 
-
-
 .text {
     color: white;
     font-size: 16px;
@@ -436,11 +438,13 @@ p {
 }
 */
 
+
 /*
 .billede2:hover .middle {
     opacity: 1;
 }
 */
+
 
 /*
 
@@ -472,9 +476,12 @@ a {
 }
 */
 
+
 /*==========FORSIDE CONTENT SLUT==========*/
 
+
 /*==========GEOLOCATION START==========*/
+
 
 /***********OM FOOD8 STARTR**************/
 
@@ -494,6 +501,7 @@ a {
 
 
 /*==========GEOLOCATION SLUT==========*/
+
 
 /*==========FOOTER START==========*/
 
@@ -555,6 +563,7 @@ a {
 
 /*==========FOOTER SLUT==========*/
 
+
 /*==========SÆRARRANGEMENTER START==========*/
 
 #saerarrangementindhold {
@@ -608,7 +617,9 @@ a {
 
 /*==========SÆRARRANGEMENTER SLUT==========*/
 
+
 /*==========SØGEFUNKTION START==========*/
+
 
 /*
 .search {
@@ -625,7 +636,9 @@ button[type=submit] {
 }
 */
 
+
 /*==========SØGEFUNKTION SLUT==========*/
+
 
 /*==========STEDER - RESTAURANTER START==========*/
 
@@ -671,6 +684,7 @@ a {
 
 
 /*==========STEDER - RESTAURANTER SLUT==========*/
+
 
 /*==========BOOKING SYSTEM START==========*/
 
@@ -756,6 +770,7 @@ a {
 
 /*==========BOOKING SYSTEM SLUT==========*/
 
+
 /*==========SINGLE START==========*/
 
 #singleinfo {
@@ -779,7 +794,7 @@ a {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
     text-align: center;
     position: relative;
     max-width: 100%;
