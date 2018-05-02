@@ -155,7 +155,7 @@ p {
     border-radius: 1%;
     cursor: pointer;
     position: absolute;
-    bottom: -175px;
+    bottom: -205px;
     left: 34%;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
@@ -328,7 +328,7 @@ p {
     border-bottom-color: #9bd5c4;
     border-bottom-style: dotted;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #omkontakt-tekst {
